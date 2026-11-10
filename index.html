@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pomo Calm</title><style>
-:root{color-scheme:light dark}
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:0 auto;padding:20px 16px 48px;line-height:1.65}
-h1{font-size:1.6rem;margin:.2em 0}h2{font-size:1.15rem;margin:1.6em 0 .3em}
-nav a{margin-right:12px}nav{margin:8px 0 20px}
-section{border-top:1px solid rgba(128,128,128,.35);margin-top:28px;padding-top:8px}
-a{color:#1a73e8}@media(prefers-color-scheme:dark){a{color:#8ab4f8}}
-[dir=rtl] nav a{margin-right:0;margin-left:12px}
-</style></head><body><h1>Pomo Calm</h1><p>A calm Pomodoro focus timer for Android.</p><ul><li><a href="privacy.html">Privacy Policy / سياسة الخصوصية / Politique de confidentialité</a></li><li><a href="terms.html">Terms of Use / شروط الاستعمال / Conditions d'utilisation</a></li></ul><p>Contact: <a href="mailto:Cmr734068@gmail.com">Cmr734068@gmail.com</a></p></body></html>
+:root{color-scheme:light dark;--bg:#f4f7fb;--surface:#fff;--text:#17243a;--muted:#64748b;--line:#e4eaf2;--accent:#4778d8;--shadow:0 18px 55px rgba(26,54,93,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:900px;margin:0 auto;padding:28px 20px 64px;line-height:1.75;color:var(--text);background:radial-gradient(ellipse at 10% 0%,rgba(112,183,232,.16),transparent 38%),var(--bg)}
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 38px;padding:13px 17px;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:var(--shadow)}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.03em;color:var(--text);text-decoration:none}.brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;color:#fff;background:linear-gradient(135deg,#365fc4,#71bce8);font-size:18px}
+.header-links,.lang-nav{display:flex;flex-wrap:wrap;gap:8px}.header-links a,.lang-nav a{padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-size:.9rem;font-weight:650}.header-links a:hover,.lang-nav a:hover{border-color:var(--accent);color:var(--accent)}
+h1{font-size:clamp(1.8rem,4vw,2.55rem);line-height:1.2;letter-spacing:-.045em;margin:0 0 18px;font-weight:850}h2{font-size:1.2rem;line-height:1.35;margin:1.65em 0 .45em;color:var(--text)}p{margin:.65em 0}a{color:var(--accent);text-underline-offset:3px}
+.site-intro{max-width:650px;color:var(--muted);font-size:1.08rem;margin:0 0 28px}.lang-nav{align-items:center;margin:22px 0 28px}
+section{margin:20px 0;padding:26px 30px;border:1px solid var(--line);border-radius:20px;background:var(--surface);box-shadow:var(--shadow);overflow-wrap:anywhere}section>h2:first-child{margin-top:0}section[dir=rtl]{text-align:right}section[dir=rtl] h2{line-height:1.55}
+ul{list-style:none;padding:0;margin:28px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}li a{display:block;height:100%;padding:20px;border:1px solid var(--line);border-radius:17px;background:var(--surface);box-shadow:var(--shadow);font-weight:750;text-decoration:none}li a:hover{border-color:var(--accent);transform:translateY(-2px)}.contact-line{color:var(--muted);font-size:.95rem}
+@media(max-width:600px){body{padding:14px 13px 42px}.site-header{margin-bottom:27px;padding:11px 12px;align-items:flex-start;flex-direction:column}.header-links{width:100%}section{padding:21px 18px;border-radius:16px}h1{font-size:1.85rem}.lang-nav a{font-size:.85rem}}
+@media(prefers-color-scheme:dark){:root{--bg:#0c1422;--surface:#131f31;--text:#edf4ff;--muted:#a6b4c8;--line:#26364d;--accent:#8db8ff;--shadow:0 18px 55px rgba(0,0,0,.22)}body{background:radial-gradient(ellipse at 10% 0%,rgba(72,123,190,.18),transparent 38%),var(--bg)}}
+</style></head><body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">P</span><span>Pomo Calm</span></a><nav class="header-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header><h1>Pomo Calm</h1><p class="site-intro">A calm Pomodoro focus timer for Android. Build a healthier focus routine, one session at a time.</p><ul><li><a href="privacy.html">Privacy Policy / سياسة الخصوصية / Politique de confidentialité</a></li><li><a href="terms.html">Terms of Use / شروط الاستعمال / Conditions d'utilisation</a></li></ul><p class="contact-line">Contact: <a href="mailto:Cmr734068@gmail.com">Cmr734068@gmail.com</a></p></body></html>
